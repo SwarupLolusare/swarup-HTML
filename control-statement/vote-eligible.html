@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-image: url("https://t3.ftcdn.net/jpg/03/89/61/88/360_F_389618887_PImTbyGB4vTQOoGKxjhOKp2w7hZmcNAs.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        fieldset {
+            width: 500px;
+            box-shadow: 3px 3px 3px 3px rgb(255, 0, 0);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(255, 0, 0);
+            font-family: cursive;
+
+        }
+
+        p {
+            font-size: x-large;
+            font-family: fantasy;
+            color: rgb(255, 0, 0);
+        }
+
+        button {
+            height: 45px;
+            width: 150px;
+            background-color: rgb(228, 11, 11);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <p id="display"></p>
+        <h1>Voter Eligiblity Checker</h1>
+        <input type="number" id="xyz">
+        <p> Enter your age</p>
+        <button onclick="voter()">check eligibllity</button>
+
+    </fieldset>
+    <script>
+        function voter() {
+            let a = document.getElementById("xyz").value;               ;
+            if (a >= 18) {
+                document.getElementById("display").innerHTML = "you are eligible for vote.";
+            }
+            else {
+                document.getElementById("display").innerHTML = "you are not eligible for vote.";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+      <p id="display"></p>
+        <h1>discount Checker</h1>
+        <input type="number" id="user-input">
+        <p> Enter your shopping amount</p>
+        <button onclick="discount()">check discount</button>
+        </fieldset>   
+          <script>
+        function speed() {
+            let a = document.getElementById("user-input").value;
+            if (a >= 10000) {
+                document.getElementById("display").innerHTML = "you get discount of ₹";
+            }
+            else {
+                document.getElementById("display").innerHTML = "you Do not get any discount";
+            }
+        }
+        </script>
+        
+</body>
+</html>
