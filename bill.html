@@ -6,14 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/308/710/small/abstract-background-technology-high-speed-racing-for-sports.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+    }
+      fieldset {
+            width: 500px;
+            box-shadow: 3px 3px 3px 3px  black;
+        }
 
+        h1 {
+            text-align: center;
+            color: aqua;
+            font-family: cursive;
+
+        }
+
+        p {
+            font-size: x-large;
+            font-family: fantasy;
+            color: aqua;
+        }
+
+        button {
+            height: 45px;
+            width: 150px;
+            background-color: rgb(11, 228, 228);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+</style>
 <body>
+  
+    <fieldset>
+        <h1> The electric bill cheaker</h1>
+        <p>Enter your electric bill</p>
     <input type="number" id="ui">
+   
     <button onclick="eletricbill()">Submit</button>
+</fieldset>
 </body>
 <script>
     function electricbill() {
-        let units = document.getElementById;
+        let units = document.getElementById ("ui").value;
         if (units <= 50) {
             let charges = units * 7;
             alert("your total bill is" + charges)
