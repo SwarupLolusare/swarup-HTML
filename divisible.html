@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTecjTGXjA-2HkNioEntoCcKaVAdcGkUH5rEQ&s  );
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+    }
+      fieldset {
+            width: 500px;
+            box-shadow: 3px 3px 3px 3px  black;
+        }
+
+        h1 {
+            text-align: center;
+            color: aqua;
+            font-family: cursive;
+
+        }
+
+        p {
+            font-size: x-large;
+            font-family: fantasy;
+            color: aqua;
+        }
+
+        button {
+            height: 45px;
+            width: 150px;
+            background-color: rgb(11, 228, 228);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+</style>
+<body>
+    <fieldset>
+        <h1> divisible checker </h1>
+        <br>
+        <br>
+        <input type="number" id="xyz">
+        <br>
+        <br>
+        <button onclick="checker()"> submit</button>
+        <p id="display"></p>
+        <script>
+            function checker() {
+                let a = document.getElementById("xyz").value;
+                if (a % 3== 0) {
+                    document.getElementById("display").innerHTML = "your number is fizz";
+                }
+                else if (a % 5 == 0) {
+                    document.getElementById("display").innerHTML = " your number is buzz"
+                }
+                else if (a % 5 && 3 == 0) {
+                    document.getElementById("display").innerHTML = " your number is fizz buzz"
+                }
+                else {
+                    document.getElementById("display").innerHTML = "your number is  divisble not by 3 and 5";
+                }
+            }
+        </script>
+</body>
+
+</html>
