@@ -59,14 +59,14 @@
         <script>
             function checker() {
                 let a = document.getElementById("xyz").value;
-                if (a % 3== 0) {
-                    document.getElementById("display").innerHTML = "your number is fizz";
+                if (a % 5 && 3== 0) {
+               document.getElementById("display").innerHTML = " your number is fizz buzz"
                 }
                 else if (a % 5 == 0) {
                     document.getElementById("display").innerHTML = " your number is buzz"
                 }
-                else if (a % 5 && 3 == 0) {
-                    document.getElementById("display").innerHTML = " your number is fizz buzz"
+                else if (a %  3 == 0) {
+                    document.getElementById("display").innerHTML = " your number is fizz "
                 }
                 else {
                     document.getElementById("display").innerHTML = "your number is  divisble not by 3 and 5";
