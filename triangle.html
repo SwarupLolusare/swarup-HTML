@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://thumbs.dreamstime.com/b/abstract-electric-golden-lightning-spark-energy-explosion-glow-thunderbolt-electricity-flash-strike-thunder-arc-burst-glowing-395084249.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        fieldset {
+            width: 500px;
+            box-shadow: 2px 2px 2px 2px aqua;
+            border-radius: 28px;
+
+        }
+
+        button {
+            border-radius: 20px;
+            height: 30px;
+            width: 90px;
+            background-color: aqua;
+            font-size: large;
+            font-family: bold;
+        }
+
+
+        p {
+            color: aqua;
+            font-size: xx-large;
+            font-family: bold;
+            text-align: center;
+        }
+
+
+
+
+        h1 {
+            text-align: center;
+            color: rgb(0, 255, 0);
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1> cheacker</h1>
+        <p id="display"></p>
+        <input type="side" id="side" placeholder="Enter side">
+        <button onclick="tringle()">cheak</button>
+
+        <script>
+            function tringle() {
+                let side = Number(document.getElementById("side").value);
+
+                if (side==3) {
+                    document.getElementById("display").innerHTML = "equilateral";
+
+
+                }
+                else if (side == 2) {
+                    document.getElementById("display").innerHTML = "iscoseluse";
+                }
+
+                 else if (side == 0) {
+                    document.getElementById("display").innerHTML = "scalene";
+                }
+
+                else {
+                    document.getElementById("display").innerHTML = "Nan";
+
+
+                }
+            }
+
+        </script>
+    </fieldset>
+</body>
+
+</html>

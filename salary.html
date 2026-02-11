@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="xyz">
+ <p id="display"></p>
+ <button onclick="salary()"> submit</button>
+    <script>
+          function salary() {
+                let a = document.getElementById("xyz").value;
+                if (a < 100000) {
+               document.getElementById("display").innerHTML = " your salary is low"
+                }
+                else if (a < 1000000 ) {
+                    document.getElementById("display").innerHTML = " your number is medium"
+                }
+             
+                else {
+                    document.getElementById("display").innerHTML = "your number is  high";
+                }
+            }
+    </script>
+</body>
+</html>
