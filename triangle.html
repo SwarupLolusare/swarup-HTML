@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body {
-            background-image: url(https://thumbs.dreamstime.com/b/abstract-electric-golden-lightning-spark-energy-explosion-glow-thunderbolt-electricity-flash-strike-thunder-arc-burst-glowing-395084249.jpg);
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/849/553/small/modern-gold-background-free-vector.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
@@ -61,30 +61,39 @@
 
 <body>
     <fieldset>
-        <h1> cheacker</h1>
+        <h1>  triangle cheacker</h1>
         <p id="display"></p>
-        <input type="side" id="side" placeholder="Enter side">
-        <button onclick="tringle()">cheak</button>
+        <input type="number" id="side">
+        <br>
+        <br>
+        <input type="number" id="xyz">
+        <br>
+        <br>
+<input type="number" id="abc">
+<br>
+        <br>
+        <button onclick="tringle()">check </button>
+        <br>
+        <br>
 
         <script>
             function tringle() {
                 let side = Number(document.getElementById("side").value);
-
-                if (side==3) {
+        let s = Number(document.getElementById("xyz").value);
+           let b = Number(document.getElementById("abc").value);
+                if (side==s && s== b) {
                     document.getElementById("display").innerHTML = "equilateral";
 
 
                 }
-                else if (side == 2) {
-                    document.getElementById("display").innerHTML = "iscoseluse";
+                else if (side == s|| s==b || side==b) {
+                    document.getElementById("display").innerHTML = "isoseleous";
                 }
 
-                 else if (side == 0) {
-                    document.getElementById("display").innerHTML = "scalene";
-                }
+            
 
                 else {
-                    document.getElementById("display").innerHTML = "Nan";
+                    document.getElementById("display").innerHTML = "scalene";
 
 
                 }
